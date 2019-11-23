@@ -30,6 +30,7 @@ import org.springframework.samples.petclinic.model.BaseEntity;
  *
  * @author Ken Krebs
  * @author Dave Syer
+ * @author AVinash barnwal
  */
 @Entity
 @Table(name = "visits")
@@ -54,6 +55,7 @@ public class Visit extends BaseEntity {
     }
 
     public LocalDate getDate() {
+        System.out.println("this is date");
         return this.date;
     }
 
